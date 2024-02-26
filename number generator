@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Number Generator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0; /* Light grey background */
+        color: #333; /* Black text */
+    }
+    h1 {
+        color: #333; /* Black text */
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #007bff; /* Blue button */
+        color: #fff; /* White text */
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+    #result {
+        font-size: 24px;
+        margin-top: 20px;
+        color: #ff0000; /* Red text for the result */
+    }
+</style>
+</head>
+<body>
+    <h1>Random Number Generator</h1>
+    <button onclick="generateRandomNumber()">Generate Random Number</button>
+    <div id="result"></div>
+
+    <script>
+        function generateRandomNumber() {
+            // Generate a random number between 1 and 100
+            var randomNumber = Math.floor(Math.random() * 100) + 1;
+            document.getElementById("result").innerText = "Random Number: " + randomNumber;
+        }
+    </script>
+</body>
+</html>
+
+
+    <script>
+        function generateRandomNumber() {
+            // Generate a random number between 1 and 100
+            var randomNumber = Math.floor(Math.random() * 100) + 1;
+            document.getElementById("result").innerText = "Random Number: " + randomNumber;
+        }
+    </script>
+</body>
+</html>
